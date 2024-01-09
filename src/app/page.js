@@ -1,7 +1,10 @@
-import Image from 'next/image'
+import HomeHeader from '@/components/HomeHeader'
+
 
 export default function Home() {
   return (
-    <div className='text-3xl text-red-500'>Hello Glome</div>
+    <>
+      <HomeHeader />
+    </>
   )
 }
