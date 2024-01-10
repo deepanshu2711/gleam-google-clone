@@ -47,7 +47,7 @@ const HomeSearch = () => {
                 <BsFillMicFill className="text-xl text-gray-500 ml-3" />
                 
             </form>
-            <div className="flex flex-col md:flex-row lg:flex-row gap-6 mt-10 ">
+            <div className=" gap-4 mt-6 flex flex-col md:flex-row lg:flex-row md:gap-6 md:mt-10 ">
                 <button onClick={handleSubmit} className="bg-[#A367B1] min-w-36  p-3 rounded-lg text-white font-medium hover:brightness-105 hover:ring-1
                  hover:ring-gray-200 active:ring-gray-300 transition-shadow">Google Search</button>
                 <button onClick={randomSearch} disabled={randomSearchloading} className=" disabled:opacity-80 bg-[#FFD1E3] min-w-36 p-3 rounded-lg text-[#392467] font-medium hover:brightness-105 hover:ring-1
