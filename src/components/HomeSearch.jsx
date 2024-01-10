@@ -16,7 +16,7 @@ const HomeSearch = () => {
     function handleSubmit (e) {
         e.preventDefault();
         if(!input.trim()) return;
-        router.push(`/search?searchTerm=${input}`);
+        router.push(`/search/web?searchTerm=${input}`);
     }
 
     async function randomSearch (e) {
@@ -28,7 +28,7 @@ const HomeSearch = () => {
             if(!res) return;
             const RandomWord = await res.json();
             setrandomSearchloading(false);
-            router.push(`/search?searchTerm=${RandomWord}`);
+            router.push(`/search/web?searchTerm=${RandomWord}`);
         } catch (error) {
             console.log(error)
             setrandomSearchloading(false);
