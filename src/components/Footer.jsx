@@ -2,7 +2,8 @@ import CountryLookup from "./CountryLookup";
 
 const Footer = () => {
     return ( 
-        <footer className="flex flex-col w-screen  absolute bottom-0 bg-[#FFD1E3] bg-opacity-25">
+        //
+        <footer className="flex flex-col w-screen absolute bottom-0   bg-[#FFD1E3] bg-opacity-10">
             <div className="w-full flex px-4 pt-4 cursor-pointer text-[#392467]">
 
                 <CountryLookup />
