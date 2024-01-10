@@ -1,4 +1,4 @@
-import SearchHeader from "@/components/SearchHeader";
+import SearchHeader from "../../components/SearchHeader";
 
 const SearchLayout = ({children}) => {
     return ( 
