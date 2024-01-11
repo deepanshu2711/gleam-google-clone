@@ -3,8 +3,8 @@ import Link from "next/link";
 import ImageSearchResults from "../../../components/ImageSearchResults";
 
 const ImageSearchPage = async({searchParams}) => {
-
-    const responce = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`);
+    const startIndex = searchParams.start || 1;
+    const responce = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`);
     if(!responce.ok){
         throw new Error('Some Thing went Wrong');
     };
