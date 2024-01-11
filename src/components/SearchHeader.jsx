@@ -25,7 +25,7 @@ const SearchHeader = () => {
                     <RiSettings3Line className="text-3xl cursor-pointer hover:bg-gray-200 rounded-full" />
                     <TbGridDots className=" text-3xl cursor-pointer hover:bg-gray-200 rounded-full" />
                     </div>
-                    <button className="bg-[#392467] p-2 text-white rounded-lg font-medium hover:brightness-105 hover:shadow-md transition-shadow">Sign in</button>
+                    <button className="bg-[#392467] p-2 text-white rounded-lg font-medium hover:brightness-105 hover:shadow-md transition-shadow hidden sm:inline-flex">Sign in</button>
 
                 </div>
             

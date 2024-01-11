@@ -5,7 +5,7 @@ const ImageSearchResults = ({results}) => {
     
     return ( 
         <div className="pb-32 mt-4">
-            <div className="grid grid-col-1  sm:grid-col-2  md::grid-cols-3 lg:grid-cols-4  xl:grid-col-5 px-3 space-x-4">
+            <div className="grid grid-cols-1  sm:grid-col-2  md::grid-cols-2 lg:grid-cols-4  px-3 space-x-4">
                 {results.items.map((result) =>(
                     <div key={result.link} className="mb-8 ">
                     <div className="group">
